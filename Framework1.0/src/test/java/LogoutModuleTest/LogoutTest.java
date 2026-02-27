@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class LogoutTest {
 	
 
-	@Test
+	@Test(groups = "ST")
 	public void LogoutWithBrowser() {
 		
 		String browser= System.getProperty("browser");
@@ -19,7 +19,7 @@ public class LogoutTest {
 		
 		System.out.println("Logout With browser success");
 	}
-	@Test
+	@Test(groups ="RT" )
 	public void LogoutWithoutBrowser() {
 		
 		

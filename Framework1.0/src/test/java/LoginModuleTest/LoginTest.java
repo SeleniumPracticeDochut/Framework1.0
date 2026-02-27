@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
 	
-	@Test
+	@Test(groups = "ST")
 	public void LoginWithBrowser() {
 		
 		String browser= System.getProperty("browser");
@@ -18,7 +18,7 @@ public class LoginTest {
 		
 		System.out.println("Login With browser success");
 	}
-	@Test
+	@Test(groups = "RT")
 	public void LoginWithoutBrowser() {
 		
 		
